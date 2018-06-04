@@ -1,0 +1,11 @@
+create table filme (
+id serial primary key,
+codigo varchar(15),
+nome varchar(30),
+genero varchar(15),
+sinopse varchar(400);
+
+DELETE FROM filme;
+ALTER SEQUENCE filme_id_seq RESTART WITH 1;
+
+SELECT * FROM filme;
