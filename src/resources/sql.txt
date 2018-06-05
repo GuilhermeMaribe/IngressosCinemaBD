@@ -1,11 +1,32 @@
+create database vendaIngressos;
+
 create table filme (
 id serial primary key,
 codigo varchar(15),
 nome varchar(30),
 genero varchar(15),
-sinopse varchar(400);
+sinopse varchar(400)
+);
 
-DELETE FROM filme;
-ALTER SEQUENCE filme_id_seq RESTART WITH 1;
 
-SELECT * FROM filme;
+create table sala (
+id serial primary key,
+nSala varchar(15),
+nAssentos smallint
+);
+
+create table sessao (
+id serial primary key,
+qtdIngresso smallint,
+horario Date,
+sala smallint REFERENCES sala(id),
+filme smallint REFERENCES filme(id)
+);
+
+create table vendaIngresso (
+id serial primary key,
+sessao smallint REFERENCES sessao(id)
+);
+
+
+

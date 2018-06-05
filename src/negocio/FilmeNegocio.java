@@ -19,7 +19,7 @@ public class FilmeNegocio {
     
     public void salvar(Filme f) throws NegocioException {
         this.validarCamposObrigatorios(f);
-        this.validarCodigoExistente(f);   // 
+        this.validarCodigoExistente(f);    
         filmeDao.salvar(f);
         
     }

@@ -20,7 +20,7 @@ public class FilmeMenu {
                 + "2- Deletar Filme\n"
                 + "3- Atualizar dados do Filme\n"
                 + "4- Listar Filmes\n"                
-                + "5- Consultar Filmes por Titulo\n"
+                + "5- Consultar Filmes por Nome\n"
                 + "0- Voltar"
                 + "\n--------------------------------------");
     }     

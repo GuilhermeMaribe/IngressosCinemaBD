@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/guilh/APIII/IngressosCinemaBD/src/view/FilmeUI.java</file>
+            <file>file:/C:/Users/guilh/APIII/IngressosCinemaBD/src/dominio/Sala.java</file>
+            <file>file:/C:/Users/guilh/APIII/IngressosCinemaBD/src/dominio/Sessao.java</file>
+            <file>file:/C:/Users/guilh/APIII/IngressosCinemaBD/src/negocio/SessaoNegocio.java</file>
+            <file>file:/C:/Users/guilh/APIII/IngressosCinemaBD/src/dao/impl_BD/BDUtil.java</file>
+            <file>file:/C:/Users/guilh/APIII/IngressosCinemaBD/src/view/SessaoUI.java</file>
+            <file>file:/C:/Users/guilh/APIII/IngressosCinemaBD/src/ingressoscinemabd/IngressosCinemaBD.java</file>
+            <file>file:/C:/Users/guilh/APIII/IngressosCinemaBD/src/dominio/Filme.java</file>
+        </group>
+    </open-files>
 </project-private>

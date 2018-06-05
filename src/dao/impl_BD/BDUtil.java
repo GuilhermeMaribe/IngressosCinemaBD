@@ -13,10 +13,10 @@ import java.util.logging.Logger;
 public class BDUtil {
     private final static String HOST = "localhost";
     private final static String PORT = "5432";
-    private final static String BD = "Cinema_ingressos";
+    private final static String BD = "vendaingressos";
     private final static String URL = "jdbc:postgresql://"+HOST+":"+PORT+"/"+BD;
     private final static String USUARIO = "postgres";
-    private final static String SENHA = "admin";
+    private final static String SENHA = "gui123";
     
     public static Connection getConnection(){
         Connection conexao = null;

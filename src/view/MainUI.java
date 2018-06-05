@@ -22,22 +22,22 @@ public class MainUI {
                         opcao = 9;//invalida
                     }
 	            switch (opcao) {
-	               // case MainMenu.OP_SALAS:
-	                 //   new SalaUI().menu();
-	                 //   break;
+	                case MainMenu.OP_SALAS:
+	                    new SalaUI().menu();
+	                    break;
                         case MainMenu.OP_FILMES:
 	                    new FilmeUI().menu();
 	                    break;
-                      /*  case MainMenu.OP_SESSOES:
+                        case MainMenu.OP_SESSOES:
 	                    new SessaoUI().menu();
 	                    break;       
                         case MainMenu.OP_INGRESSO:
-	                    new IngressoUI().menu();
+	                    new VendaIngressoUI().menu();
 	                    break;                            
 	                case MainMenu.OP_SAIR:
 	                    System.out.println("Aplicação finalizada!!!");
 	                    break;
-	                */default:
+	                default:
 	                    System.out.println("Opção inválida..");
 
 	            }

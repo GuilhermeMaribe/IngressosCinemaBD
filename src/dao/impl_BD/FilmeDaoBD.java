@@ -184,7 +184,7 @@ public class FilmeDaoBD extends DaoBd<Filme> implements FilmeDao{
     @Override
     public List<Filme> listarPorNome(String nome) {
         List<Filme> listaFilmes = new ArrayList<>();
-        String sql = "SELECT * FROM filme WHERE titulo LIKE ?";
+        String sql = "SELECT * FROM filme WHERE nome LIKE ?";
 
         try {
             conectar(sql);
@@ -205,7 +205,7 @@ public class FilmeDaoBD extends DaoBd<Filme> implements FilmeDao{
             }
 
         } catch (SQLException ex) {
-            System.err.println("Erro de Sistema - Problema ao buscar os filmes pelo titulo no Banco de Dados!");
+            System.err.println("Erro de Sistema - Problema ao buscar os filmes pelo nome no Banco de Dados!");
             throw new BDException(ex);
         } finally {
             fecharConexao();
