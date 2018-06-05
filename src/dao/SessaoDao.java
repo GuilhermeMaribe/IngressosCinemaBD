@@ -1,14 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package dao;
+
+import dominio.Sessao;
+import java.util.List;
 
 /**
  *
  * @author guilh
  */
-public class SessaoDao {
+public interface SessaoDao extends Dao<Sessao> {
     
+    public List<Sessao> listarAtivas();    
+    public void retiraIngresso(Sessao sessao);
 }
