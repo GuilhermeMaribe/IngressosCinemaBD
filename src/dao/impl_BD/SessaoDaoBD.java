@@ -71,8 +71,8 @@ public class SessaoDaoBD extends DaoBd<Sessao> implements SessaoDao {
     }
 
     @Override
-    public void atualizar(Sessao model) { 
-        throw new UnsupportedOperationException("Not supported yet."); 
+    public void atualizar(Sessao sessao) { 
+        
     }
 
     @Override

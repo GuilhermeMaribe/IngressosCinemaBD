@@ -17,7 +17,7 @@ public class VendaIngressoDaoBD extends DaoBd<VendaIngresso> implements VendaIng
     public void salvar(VendaIngresso ing) {
         int id = 0;
         try {
-            String sql = "INSERT INTO ingresso (id_sessao) "
+            String sql = "INSERT INTO vendaIngresso (id_sessao) "
                     + "VALUES (?)";
 
             conectarObtendoId(sql);
@@ -46,7 +46,7 @@ public class VendaIngressoDaoBD extends DaoBd<VendaIngresso> implements VendaIng
     @Override
     public void deletar(VendaIngresso ing) {
         try {
-            String sql = "DELETE FROM ingresso WHERE id = ?";
+            String sql = "DELETE FROM vendaIngresso WHERE id = ?";
 
             conectar(sql);
             comando.setInt(1, ing.getId());
@@ -61,7 +61,7 @@ public class VendaIngressoDaoBD extends DaoBd<VendaIngresso> implements VendaIng
     }
 
     @Override
-    public void atualizar(VendaIngresso model) {
+    public void atualizar(VendaIngresso ing) {
       
     }
 
@@ -69,7 +69,7 @@ public class VendaIngressoDaoBD extends DaoBd<VendaIngresso> implements VendaIng
     public List<VendaIngresso> listar() {
                 List<VendaIngresso> listaIngresso = new ArrayList<>();
 
-        String sql = "SELECT * FROM ingresso";
+        String sql = "SELECT * FROM vendaIngresso";
 
         try {
             conectar(sql);
@@ -99,7 +99,7 @@ public class VendaIngressoDaoBD extends DaoBd<VendaIngresso> implements VendaIng
 
     @Override
     public VendaIngresso procurarPorId(int id) {
-                String sql = "SELECT * FROM ingresso WHERE id = ?";
+                String sql = "SELECT * FROM vendaIngresso WHERE id = ?";
         try {
             conectar(sql);
             comando.setInt(1, id);
@@ -131,7 +131,7 @@ public class VendaIngressoDaoBD extends DaoBd<VendaIngresso> implements VendaIng
     @Override
     public List<VendaIngresso> listarPorSessao(int id) {
         List<VendaIngresso> listaIngresso = new ArrayList<>();
-        String sql = "SELECT * FROM ingresso WHERE id_sessao=?";
+        String sql = "SELECT * FROM vendaIngresso WHERE id_sessao=?";
 
         try {
             conectar(sql);

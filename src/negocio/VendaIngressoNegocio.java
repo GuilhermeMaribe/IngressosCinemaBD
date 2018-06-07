@@ -76,7 +76,7 @@ public class VendaIngressoNegocio {
         int i = Integer.parseInt(id);
         return(vendaIngressoDao.listarPorSessao(i));
         }catch(Exception e){
-        System.out.println("VErificar informações concedidas.");
+        System.out.println("Verificar informações concedidas.");
         }
         return (null);
     }      

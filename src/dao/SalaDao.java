@@ -12,9 +12,14 @@ public interface SalaDao extends Dao<Sala> {
 
     /**
      *
-     * @param numero
-     * @return
+     * @param sala
      */
+    @Override
+    public void salvar(Sala sala);
+    @Override
+    public void deletar(Sala sala);
+    @Override
+    public void atualizar(Sala sala);
     public Sala procurarPorNumero(String numero);
 
     public List<Sala> listarPorNumero(String numero);

@@ -15,7 +15,8 @@ public class Sessao {
     private Filme filme;
 
     public Sessao(LocalTime horario, Sala sala, Filme filme) {
-        this.qtdIngresso = sala.getnAssentos();
+        this.id = id;
+        this.qtdIngresso = qtdIngresso;
         this.horario = horario;
         this.sala = sala;
         this.filme = filme;

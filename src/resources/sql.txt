@@ -17,16 +17,15 @@ nAssentos smallint
 
 create table sessao (
 id serial primary key,
-qtdIngresso smallint,
-horario Date,
-sala smallint REFERENCES sala(id),
-filme smallint REFERENCES filme(id)
+qtd_ingresso smallint,
+horario time,
+id_sala smallint REFERENCES sala(id),
+id_filme smallint REFERENCES filme(id)
 );
 
 create table vendaIngresso (
 id serial primary key,
-sessao smallint REFERENCES sessao(id)
+id_sessao smallint REFERENCES sessao(id)
 );
-
 
 

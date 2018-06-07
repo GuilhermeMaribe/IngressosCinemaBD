@@ -34,7 +34,7 @@ public class VendaIngressoUI {
                 opcao = Console.scanInt("Digite sua opção:");
                 switch (opcao) {
                     case VendaIngressoMenu.OP_CADASTRAR:
-                        comprarIngresso();
+                        venderIngresso();
                         break;
                     case VendaIngressoMenu.OP_DELETAR:
                         deletarIngresso();
@@ -58,9 +58,9 @@ public class VendaIngressoUI {
         } while (opcao != VendaIngressoMenu.OP_SAIR);
     }
 
-    private void comprarIngresso() {          
+    private void venderIngresso() {          
         try {
-            sessaoUI.listarSessao(sessaoNegocio.listarAtivas());            
+            sessaoUI.listarSessao(sessaoNegocio.listar());            
             String sessao = Console.scanString("Id da sessao: ");
             Sessao s = sessaoNegocio.procurarPorId(sessao);            
             ingressoNegocio.salvar(new VendaIngresso(s));            

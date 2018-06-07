@@ -64,7 +64,7 @@ public class SessaoUI {
  
      private void cadastrarSessao() {
         try {
-            LocalTime h = DateTimeUtil.stringToTime(Console.scanString("Digite o horario da sessao(hh:mm)"));
+            LocalTime h = DateTimeUtil.stringToTime(Console.scanString("Digite o horario da sessao(hh:mm): "));
 
             String nSala = Console.scanString("Numero da sala: ");
             Sala s = salaNegocio.procurarPorNumero(nSala);
@@ -90,7 +90,7 @@ public class SessaoUI {
     
     public void listarSessao(List<Sessao> listaSessao) { 
         if (listaSessao.isEmpty()) {
-            System.out.println("Sessao nao encontradas!");
+            System.out.println("Sessoes nao encontradas!");
         } else {
             System.out.println("-----------------------------\n");
             System.out.println(String.format("%-10s", "ID") + "\t"
